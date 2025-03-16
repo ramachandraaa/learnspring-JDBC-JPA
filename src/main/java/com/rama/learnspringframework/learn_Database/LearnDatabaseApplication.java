@@ -10,4 +10,4 @@ public class LearnDatabaseApplication {
 		SpringApplication.run(LearnDatabaseApplication.class, args);
 	}
 
-}
+}//
