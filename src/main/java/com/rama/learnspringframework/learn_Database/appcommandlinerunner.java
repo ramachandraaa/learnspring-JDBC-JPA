@@ -12,7 +12,11 @@ public class appcommandlinerunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 repository.insert(new Course(1,"Ram","Chandra"));
+        repository.insert(new Course(2,"Soma","Shekar"));
+        repository.insert(new Course(3,"Vijay","Kumar"));
+System.out.println(repository.findById(1)
 
-
+);
+repository.deleteById(3);
     }
 }

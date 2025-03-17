@@ -14,4 +14,13 @@ private EntityManager entityManager;
     {
 entityManager.merge(course);
     }
+    public Course findById(int id)
+    {
+     return    entityManager.find(Course.class,id);
+    }
+    public void deleteById(int id)
+    {
+       Course c= entityManager.find(Course.class,id);
+       entityManager.remove(c);
+    }
 }
